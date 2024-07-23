@@ -1,7 +1,6 @@
 $(document).ready(function () {
   $("#hide").on("click", function () {
     $(".all").hide(1000);
-    $(".all").animate({ with: 0 }, 1000);
     $("#show").show();
     $("#hide").hide();
   });
@@ -13,23 +12,38 @@ $(document).ready(function () {
 
   $("#cat").on("click", function () {
     getCategories();
+    $(".all").hide(1000);
+    $("#show").show();
+    $("#hide").hide();
   });
 
   $("#area").on("click", function () {
     getAreas();
+    $(".all").hide(1000);
+    $("#show").show();
+    $("#hide").hide();
   });
 
   $("#ingre").on("click", function () {
     getIngredients();
+    $(".all").hide(1000);
+    $("#show").show();
+    $("#hide").hide();
   });
 
 
   $("#search").on("click", function(){
     displaySearchInput();
+    $(".all").hide(1000);
+    $("#show").show();
+    $("#hide").hide();
   });
 
   $("#contact").on("click", function(){
     displayContact();
+    $(".all").hide(1000);
+    $("#show").show();
+    $("#hide").hide();
   });
 
 
