@@ -1,0 +1,169 @@
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #fff !important;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+li {
+  width: max-content;
+  height: max-content;
+  background-color: #CFF4FC;
+  color: black !important;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+aside {
+  left: 0;
+  width: 260px;
+}
+
+.all {
+  display: none;
+  width: 180px;
+}
+
+
+
+.links {
+  gap: 30px;
+  margin-left: 10px;
+  margin-top: 30px;
+}
+aside i {
+  cursor: pointer;
+  transform: translateY(10%);
+}
+
+.side-right {
+  width: 80px;
+  background-color: #eee;
+}
+#hide {
+  display: none;
+}
+
+#rowData {
+  margin-left: 100px;
+}
+
+.col-md-3 i {
+  font-size: 70px !important;
+}
+
+
+.cover {
+  display: flex;
+  align-content: start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cover .content {
+  position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(238, 248, 248, 0.5);
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    color: #ffff;
+    transition: 0.3s ease;
+    opacity: 0;
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cover:hover .content {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: transform 1s ease-in;
+  z-index: 1;
+}
+
+
+
+
+  .ingredient {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  } 
+
+
+
+.tag {
+  width: max-content;
+  height: max-content;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 250px !important;
+}
+
+.lds-hourglass {
+  color: #14b9eb
+}
+.lds-hourglass,
+.lds-hourglass:after {
+  box-sizing: border-box;
+}
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
